@@ -50,7 +50,7 @@ nav {
         li {
           &.links__item--selected {
             a {
-              color: #12e3f6;
+              color: $primary-color;
             }
           }
           &:hover {

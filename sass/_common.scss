@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 .show {
   display: block !important;
+}
+section {
+  padding: 50px 0;
 }
 %oblique-img {
   border: 1px solid #ccc;
@@ -42,3 +48,11 @@
     height: 20px;
   }
 }
+.subtitle {
+  text-align: center;
+  width: 500px;
+  max-width: 90%;
+  color: #5a5959;
+  margin: 0 auto 35px;
+}
+$primary-color: #00ddf1;
