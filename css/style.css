@@ -105,6 +105,7 @@ nav {
 
 .hero {
   padding-top: 120px;
+  padding-bottom: 80px;
   background-image: linear-gradient(to right, #c108fa, #4b056b); }
   .hero__wrapper {
     display: flex;
@@ -125,6 +126,21 @@ nav {
     @media (max-width: 576px) {
       .hero__img img {
         display: none; } }
+  .hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf9f9;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+    margin-top: 45px; }
+    .hero__button__txt {
+      display: flex;
+      flex-direction: column;
+      font-size: 11px;
+      margin-left: 5px; }
 
 body {
   height: 1000px; }
