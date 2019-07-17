@@ -1,0 +1,54 @@
+.contact {
+  padding: 120px 0 0 0;
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+  background-image: linear-gradient(to right, #c108fa, #4b056b);
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    width: 50%;
+    img {
+      width: 100%;
+      margin-bottom: -5px;
+    }
+  }
+  &__form {
+    form {
+      input {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      button {
+        background-color: $primary-color;
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 30px;
+      }
+    }
+  }
+  .title {
+    color: white;
+    font-weight: 100;
+    font-size: 38px;
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+
+}

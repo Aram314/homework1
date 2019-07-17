@@ -16,17 +16,17 @@ footer {
     max-width: 100%;
     position: relative;
     //font-family: "Font Awesome 5 Brands" !important;
-    //&::after {
-    //  content: "\f002";
-    //  position: absolute;
-    //  top: 50%;
-    //  transform: translateY(-50%);
-    //  right: 20px;
-    //  //background-color: red;
-    //  font-family: "Font Awesome 5 Brands";
-    //}
+    &::after {
+      content: "\f3eb";
+      position: absolute;
+      top: 50%;
+      color: black;
+      transform: translateY(-50%);
+      right: 20px;
+      font-family: "Font Awesome 5 Brands";
+    }
     input {
-      padding: 10px 10px 10px 20px;
+      padding: 10px 37px 10px 20px;
       border: none;
       outline: none;
       border-radius: 30px;

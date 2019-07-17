@@ -108,7 +108,8 @@ nav {
             nav .nav-wrapper .links ul li a {
               padding: 6px 10px !important;
               display: block;
-              font-size: 18px !important; } }
+              font-size: 18px !important;
+              cursor: pointer; } }
       nav .nav-wrapper .links ul {
         display: flex;
         list-style-type: none;
@@ -118,6 +119,7 @@ nav {
         nav .nav-wrapper .links ul li:hover a {
           color: #c2f5f8; }
         nav .nav-wrapper .links ul li a {
+          cursor: pointer;
           text-decoration: none;
           padding: 15px 10px;
           text-transform: uppercase;
@@ -133,10 +135,12 @@ nav {
       @media (max-width: 992px) and (min-width: 768px) {
         nav .nav-wrapper .social-media ul {
           padding-left: 20px; } }
-      nav .nav-wrapper .social-media ul li a i {
-        color: white;
-        font-size: 18px;
-        padding: 5px; }
+      nav .nav-wrapper .social-media ul li a {
+        cursor: pointer; }
+        nav .nav-wrapper .social-media ul li a i {
+          color: white;
+          font-size: 18px;
+          padding: 5px; }
     nav .nav-wrapper .menu-button {
       margin-left: auto;
       margin-bottom: 14px; }
@@ -285,11 +289,60 @@ footer {
     width: 270px;
     max-width: 100%;
     position: relative; }
+    footer .footer__search::after {
+      content: "\f3eb";
+      position: absolute;
+      top: 50%;
+      color: black;
+      transform: translateY(-50%);
+      right: 20px;
+      font-family: "Font Awesome 5 Brands"; }
     footer .footer__search input {
-      padding: 10px 10px 10px 20px;
+      padding: 10px 37px 10px 20px;
       border: none;
       outline: none;
       border-radius: 30px;
       width: 100%; }
+
+.contact {
+  padding: 120px 0 0 0;
+  background-image: linear-gradient(to right, #c108fa, #4b056b); }
+  @media (max-width: 768px) {
+    .contact {
+      padding-bottom: 50px; } }
+  .contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .contact__img {
+    width: 50%; }
+    @media (max-width: 768px) {
+      .contact__img {
+        display: none; } }
+    .contact__img img {
+      width: 100%;
+      margin-bottom: -5px; }
+  .contact__form form input {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 25px; }
+  .contact__form form button {
+    background-color: #00ddf1;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px; }
+  .contact .title {
+    color: white;
+    font-weight: 100;
+    font-size: 38px; }
+    .contact .title::after {
+      display: none; }
+    .contact .title::before {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
