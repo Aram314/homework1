@@ -1,0 +1,110 @@
+nav {
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(to right, #c108fa, #4b056b);
+  width: 100%;
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    .logo {
+      img {
+        width: 80px;
+        height: 50px;
+        transition: all 0.4s ease-in-out 0s;
+      }
+      &--small {
+        margin-top: -8px;
+        width: 56px !important;
+        height: 37px !important;
+        transition: all 0.4s ease-in-out 0s;
+      }
+    }
+    .links {
+      @media (max-width: 768px) {
+        display: none;
+        position: absolute;
+        top: 58px;
+        right: 0;
+        background-image: linear-gradient(to right, #70038e, #4b056b);
+        padding-right: 32px;
+        border-radius: 0 0 0 10px;
+        ul {
+          flex-direction: column;
+          padding-left: 12px;
+          padding-top: 16px;
+          text-align: right;
+          li a {
+            padding: 6px 10px !important;
+            display: block;
+            font-size: 18px !important;
+          }
+        }
+      }
+      margin-left: auto;
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin-top: 0;
+        li {
+          &.links__item--selected {
+            a {
+              color: #12e3f6;
+            }
+          }
+          &:hover {
+            a {
+              color: #c2f5f8;
+            }
+          }
+          a {
+            text-decoration: none;
+            padding: 15px 10px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .social-media {
+      @media (max-width: 768px) {
+        display: none;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin-top: 0;
+        @media (max-width: 992px) and (min-width: 768px) {
+          padding-left: 20px;
+        }
+        li {
+          a {
+            i {
+              color: white;
+              font-size: 18px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+    .menu-button {
+      margin-left: auto;
+      @media (min-width: 769px) {
+        display: none;
+      }
+      margin-bottom: 14px;
+      &__line {
+        display: block;
+        width: 34px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 4px;
+        margin: 3px 0;
+      }
+    }
+  }
+
+}

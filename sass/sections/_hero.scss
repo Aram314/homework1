@@ -1,0 +1,31 @@
+.hero {
+  padding-top: 120px;
+  background-image: linear-gradient(to right, #c108fa, #4b056b);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    color: white;
+    h3 {
+      font-size: 1.87em;
+      font-weight: 100;
+      margin: 0;
+    }
+  }
+  &__img {
+    @media (max-width: 768px) {
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+    @media (max-width: 576px) {
+      img {
+        display: none;
+      }
+    }
+    margin-right: 40px;
+  }
+}
