@@ -3,7 +3,7 @@ nav {
   top: 0;
   background-image: linear-gradient(to right, #c108fa, #4b056b);
   width: 100%;
-
+  z-index: 15;
   .nav-wrapper {
     display: flex;
     align-items: center;
