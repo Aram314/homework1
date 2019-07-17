@@ -271,7 +271,25 @@ nav {
       .blog__post__txt__date {
         color: #00ddf1 !important; }
 
-body {
-  height: 1000px; }
+footer {
+  background-color: #00ddf1;
+  color: white;
+  text-align: center;
+  padding: 50px; }
+  footer h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 28px; }
+  footer .footer__search {
+    margin: 35px auto 0;
+    width: 270px;
+    max-width: 100%;
+    position: relative; }
+    footer .footer__search input {
+      padding: 10px 10px 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

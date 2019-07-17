@@ -1,0 +1,38 @@
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 28px;
+  }
+  .footer__search {
+    //margin-top: 25px;
+    //border: 1px solid;
+    margin: 35px auto 0;
+    width: 270px;
+    max-width: 100%;
+    position: relative;
+    //font-family: "Font Awesome 5 Brands" !important;
+    //&::after {
+    //  content: "\f002";
+    //  position: absolute;
+    //  top: 50%;
+    //  transform: translateY(-50%);
+    //  right: 20px;
+    //  //background-color: red;
+    //  font-family: "Font Awesome 5 Brands";
+    //}
+    input {
+      padding: 10px 10px 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      width: 100%;
+
+    }
+  }
+
+}
